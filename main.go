@@ -65,6 +65,7 @@ func main() {
 	router.GET("/books", getBooks)
 	router.POST("/books", createBook)
 	router.GET("book/:id", getBook)
+	// for patch request we just sat router.PATCH
 
 	router.Run("localhost:8080")
 
